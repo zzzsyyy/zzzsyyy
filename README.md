@@ -1,5 +1,3 @@
-<!--
-**zzzsyyy/zzzsyyy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 这个人很懒，什么都没写。
 
