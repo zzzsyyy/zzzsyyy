@@ -1,8 +1,8 @@
-name: Python Package using Conda
+name: autocheck
 
 on:
   schedule:
-    - cron: '29 17,18 * * *'
+    - cron: '29 9,10 * * *'
 
 jobs:
   build-linux:
