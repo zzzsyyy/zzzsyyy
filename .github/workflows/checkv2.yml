@@ -14,6 +14,6 @@ jobs:
         python-version: 3.8
     - name: check
       run: |
-        pip install request
+        pip install requests
         python checkv2.py
       
