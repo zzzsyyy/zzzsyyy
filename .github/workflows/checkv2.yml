@@ -13,5 +13,7 @@ jobs:
       with:
         python-version: 3.8
     - name: check
-      run: python checkv2.py
+      run: |
+        pip install request
+        python checkv2.py
       
