@@ -12,8 +12,8 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+    - name: ins
+      run: pip install requests
     - name: check
-      run: |
-        pip install requests
-        python checkv2.py
+      run: python checkv2.py
       
