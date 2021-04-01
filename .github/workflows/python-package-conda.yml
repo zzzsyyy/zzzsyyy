@@ -1,0 +1,19 @@
+name: Python Package using Conda
+
+on:
+  schedule:
+    - cron: '29 17,18 * * *'
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: check
+      run: python checkv2.py
+      
