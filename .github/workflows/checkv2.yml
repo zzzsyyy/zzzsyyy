@@ -1,6 +1,6 @@
 name: autocheck
 
-on:
+on: 
   schedule:
     - cron: '29 9,10 * * *'
 
