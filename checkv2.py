@@ -26,8 +26,6 @@ def buaaLogin(user_name, password):
         "password": password,
     }
     responseRes = requests.post(postUrl, data=postData)
-    # 无论是否登录成功，状态码一般都是 statusCode = 200
-    # print(f"statusCode = {responseRes.status_code}")
     print(f"text = {responseRes.text}")
     return responseRes
 
