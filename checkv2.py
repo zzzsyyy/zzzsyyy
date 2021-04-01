@@ -46,7 +46,7 @@ def fillForm(res):
     return r
 
 
-def main_handler(event, context):
+def main(event, context):
     result = fillForm(buaaLogin(your_name, your_pwd))
     bot_post(result.text)
     return("DONE")
