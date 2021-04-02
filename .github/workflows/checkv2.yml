@@ -22,5 +22,8 @@ jobs:
       env: 
         YOUR_PWD: ${{ secrets.YOUR_PWD }}
         TOKEN: ${{ secrets.TOKEN }}
+        YOUR_NAME: ${{secrets.YOUR_NAME}}
+        CHAT_ID: ${{secret.CHAT_ID}}
+        WECHAT_KEY: ${{secret.WECHAT_KEY}}
       run: python checkv2.py
       
