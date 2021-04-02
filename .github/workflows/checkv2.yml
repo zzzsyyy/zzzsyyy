@@ -17,5 +17,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
     - name: check
-      run: python checkv2.py
+      run: |
+          python test.py
+          python ./checkv2.py
       
