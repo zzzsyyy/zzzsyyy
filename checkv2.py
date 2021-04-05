@@ -15,6 +15,7 @@ def bot_post(text):
         url1 = 'https://sctapi.ftqq.com/' + wechat_key + '.send?title=check_ok' + '&desp='+text+time.strftime("%m-%d", time.localtime())
         requests.get(url1)
     if token  != "":
+        print('okk'+token)
         url2 = 'https://api.telegram.org/bot'+token+'/sendMessage?chat_id='+chat_id+'&text='+text+time.strftime("%m-%d", time.localtime())
         requests.get(url2)
 
