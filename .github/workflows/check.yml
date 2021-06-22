@@ -27,4 +27,4 @@ jobs:
         CHAT_ID: ${{secrets.CHAT_ID}}
         WECHAT_KEY: ${{secrets.WECHAT_KEY}}
         FORM: ${{secrets.FORM}}
-      run: python checkv2.py
+      run: python checkv2.2.py
