@@ -3,12 +3,12 @@ import re
 import time
 import os
 
-your_name = os.environ["YOUR_NAME"]
-your_pwd = os.environ["YOUR_PWD"]
-wechat_key = os.environ["WECHAT_KEY"]
-token = os.environ["TOKEN"]
-chat_id = os.environ["CHAT_ID"]
-form_data = os.environ["FORM"]
+your_name = os.environ["YOUR_NAME"]    #学号
+your_pwd = os.environ["YOUR_PWD"]      #密码
+wechat_key = os.environ["WECHAT_KEY"]  #server酱
+token = os.environ["TOKEN"]            #
+telechan_key = os.environ["TELE_KEY"]  #telechan
+form_data = os.environ["FORM"]         #签到表单
 
 def bot_post(text):
     if wechat_key != "":
@@ -16,7 +16,7 @@ def bot_post(text):
         requests.get(url1)
     if token  != "":
         print('okk'+token)
-        url2 = 'https://api.telegram.org/bot'+token+'/sendMessage?chat_id='+chat_id+'&text='+text+time.strftime("%m-%d", time.localtime())
+        url2 = 'telechan8.vercel.app/api/send?sendkey='+telechan_key+'&text='+text+time.strftime("%m-%d", time.localtime())
         requests.get(url2)
 
 
