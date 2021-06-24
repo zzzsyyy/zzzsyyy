@@ -16,7 +16,7 @@ def bot_post(text):
         requests.get(url1)
     if token  != "":
         print('okk'+token)
-        url2 = 'telechan8.vercel.app/api/send?sendkey='+telechan_key+'&text='+text+time.strftime("%m-%d", time.localtime())
+        url2 = 'https://telechan8.vercel.app/api/send?sendkey='+telechan_key+'&text='+text+time.strftime("%m-%d", time.localtime())
         requests.get(url2)
 
 
