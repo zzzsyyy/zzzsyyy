@@ -3,13 +3,13 @@
 这个人很懒，什么都没写。
 
 + He/him
-+ Arch Linux & Windows user
++ Arch Linux user
 + BUAAer
 + étudie dans l’ECPKN, je peux parler Français :fr:
 + programming lover, typing Python & C 
-+ NLP
++ NLP & miniprogram
 + learning html&css&js
-+ love maths
++ love maths though poor
 
 
 [![My GitHub stats](https://github-readme-stats.vercel.app/api?username=zzzsyyy&show_icons=true&locale=fr)](https://github.com/zzzsyyy)
