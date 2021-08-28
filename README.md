@@ -6,7 +6,7 @@
 + Arch Linux user
 + BUAAer
 + étudie dans l’ECPKN, je peux parler Français :fr:
-+ programming lover, typing Python & C 
++ programming lover, typing Python & C & Go
 + NLP & miniprogram
 + learning html&css&js
 + love maths though poor
