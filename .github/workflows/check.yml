@@ -1,9 +1,8 @@
 name: autocheck
 
 on: 
-    push
-#   schedule: 
-#     - cron: '1,10 9,10 * * *'
+    schedule: 
+      - cron: '10 9,10 * * *'
 
 jobs: 
   check: 
@@ -27,4 +26,5 @@ jobs:
         TELE_KEY: ${{secrets.TELE_KEY}}
         WECHAT_KEY: ${{secrets.WECHAT_KEY}}
         FORM: ${{secrets.FORM}}
+        FORM_JIA: ${{secrets.FORM_JIA}}
       run: python checkv2.2.py
