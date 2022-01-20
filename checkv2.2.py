@@ -8,8 +8,10 @@ your_pwd = os.environ["YOUR_PWD"]      #密码
 wechat_key = os.environ["WECHAT_KEY"]  #server酱
 token = os.environ["TOKEN"]            #
 telechan_key = os.environ["TELE_KEY"]  #telechan
-form_data = os.environ["FORM"]         #签到表单
-
+# 放假
+form_data_1 = os.environ["FORM_JIA"]
+# 在校
+form_data_2 = os.environ["FORM"]
 def bot_post(text):
     if wechat_key != "":
         url1 = 'https://sctapi.ftqq.com/' + wechat_key + '.send?title=check_ok' + '&desp='+text+time.strftime("%m-%d", time.localtime())
@@ -43,7 +45,7 @@ def fillForm(res):
         'Content-Type': 'application/x-www-form-urlencoded',
         'Cookie': res.headers['set-cookie']
     }
-    r = s.post('https://app.buaa.edu.cn/buaaxsncov/wap/default/save', data=form_data, headers=headers)
+    r = s.post('https://app.buaa.edu.cn/buaaxsncov/wap/default/save', data=form_data_1, headers=headers)
     return r
 
 
