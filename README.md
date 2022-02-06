@@ -7,7 +7,7 @@
 + BUAAer
 + 汉语 / English / Français
 + coding lover, typing Python & C & JavaScript
-+ learning TypeScript & DS & Golang
++ learning TypeScript & DS & Rust
 + love maths though poor
 
 
