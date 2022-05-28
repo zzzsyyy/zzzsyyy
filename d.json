@@ -1,0 +1,255 @@
+{
+
+    "policy": {
+
+        "system": {
+
+            "statsInboundUplink": true,
+
+            "statsInboundDownlink": true
+
+        }
+
+    },
+
+    "log": {
+
+        "access": "",
+
+        "error": "",
+
+        "loglevel": "warning"
+
+    },
+
+    "inbounds": [
+
+        {
+
+            "tag": "proxy",
+
+            "port": 10808,
+
+            "listen": "0.0.0.0",
+
+            "protocol": "socks",
+
+            "sniffing": {
+
+                "enabled": true,
+
+                "destOverride": [
+
+                    "http",
+
+                    "tls"
+
+                ]
+
+            },
+
+            "settings": {
+
+                "auth": "noauth",
+
+                "udp": true
+
+            }
+
+        },
+
+        {
+
+            "tag": "api",
+
+            "port": 14132,
+
+            "listen": "127.0.0.1",
+
+            "protocol": "dokodemo-door",
+
+            "settings": {
+
+                "udp": false,
+
+                "address": "127.0.0.1"
+
+            }
+
+        }
+
+    ],
+
+    "outbounds": [
+
+        {
+
+            "tag": "proxy",
+
+            "protocol": "vmess",
+
+            "settings": {
+
+                "vnext": [
+
+                    {
+
+                        "address": "d.buaa.edu.cn",
+
+                        "port": 443,
+
+                        "users": [
+
+                            {
+
+                                "id": "uuid",
+
+                                "alterId": 16,
+
+                                "email": "t@t.tt",
+
+                                "security": "auto"
+
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            },
+
+            "streamSettings": {
+
+                "network": "ws",
+
+                "security": "tls",
+
+                "tlsSettings": {
+
+                    "allowInsecure": false
+
+                },
+
+                "wsSettings": {
+
+                    "path": "/ws/777xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/path",
+
+                    "headers": {
+
+                        "Cookie": "wengine_vpn_ticketd_buaa_edu_cn=103ac3c5bbef6439"
+
+                    }
+
+                }
+
+            },
+
+            "mux": {
+
+                "enabled": true,
+
+                "concurrency": 8
+
+            }
+
+        },
+
+        {
+
+            "tag": "direct",
+
+            "protocol": "freedom",
+
+            "settings": {}
+
+        },
+
+        {
+
+            "tag": "block",
+
+            "protocol": "blackhole",
+
+            "settings": {
+
+                "response": {
+
+                    "type": "http"
+
+                }
+
+            }
+
+        }
+
+    ],
+
+    "stats": {},
+
+    "api": {
+
+        "tag": "api",
+
+        "services": [
+
+            "StatsService"
+
+        ]
+
+    },
+
+    "dns": {
+
+        "servers": [
+
+            "8.8.8.8",
+
+            "223.5.5.5",
+
+            "1.1.1.1"
+
+        ]
+
+    },
+
+    "routing": {
+
+        "domainStrategy": "IPIfNonMatch",
+
+        "rules": [
+
+            {
+
+                "type": "field",
+
+                "inboundTag": [
+
+                    "api"
+
+                ],
+
+                "outboundTag": "api"
+
+            },
+
+            {
+
+                "type": "field",
+
+                "outboundTag": "direct",
+
+                "ip": [
+
+                    "geoip:private"
+
+                ]
+
+            }
+
+        ]
+
+    }
+
+}
