@@ -3,7 +3,7 @@
 这个人很懒，什么都没写。
 
 + He/him
-+ Arch Linux user
++ Arch & Nix OS Linux user
 + BUAAer
 + 汉语 / English / Français
 + coding lover, typing Python & C & JavaScript
