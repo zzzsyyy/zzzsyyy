@@ -1,9 +1,10 @@
 # :smile
+Migrated to [Codeberg](https://codeberg.org/zzzsy) already
 
 这个人很懒，什么都没写。
 
 + He/him
-+ Arch & Nix OS Linux user
++ Arch Linux user
 + BUAAer
 + 汉语 / English / Français
 + coding lover, typing Python & C & JavaScript
