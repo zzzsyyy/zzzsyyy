@@ -1,8 +1,8 @@
 name: autocheck
 
 on: 
-    schedule: 
-      - cron: '10 9,10 * * *'
+    #schedule: 
+    #  - cron: '10 9,10 * * *'
 
 jobs: 
   check: 
