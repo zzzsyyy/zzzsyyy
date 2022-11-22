@@ -10,6 +10,7 @@ Migrated to [Codeberg](https://codeberg.org/zzzsy) already
 + coding lover, typing Python & C & JavaScript
 + learning TypeScript & DS & Rust
 + love maths though poor
++ -q=TXT contact.zzzsy.top
 
 
 [![My GitHub stats](https://github-readme-stats.vercel.app/api?username=zzzsyyy&show_icons=true)](https://github.com/zzzsyyy)
