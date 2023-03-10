@@ -11,10 +11,9 @@ Migrated to [Codeberg](https://codeberg.org/zzzsy) already
 + learning DS & Rust & Julia
 + love maths though poor
 + -q=TXT contact.zzzsy.top
-
 <a href="https://github.com/zzzsyyy">
-  <img height=160 align="center" src="https://github-readme-stats.vercel.app/api?username=zzzsyyy&show_icons=true&count_private=true&locale=fr" />
+  <img height=180 align="center" src="https://github-readme-stats.vercel.app/api?username=zzzsyyy&show_icons=true&count_private=true&locale=fr" />
 </a>
-<a href="https://github.com/zzzsyyy?tab=repositories">
-  <img height=160 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zzzsyyy&count_private=true&layout=compact&hide=HTML,Javascript&card_width=360&locale=fr" />
+<a href="https://github.com/zzzsyyy">
+  <img height=180 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zzzsyyy&count_private=true&layout=compact&hide=HTML,Javascript&card_width=360&locale=fr&langs_count=6" />
 </a>
