@@ -8,11 +8,13 @@ Migrated to [Codeberg](https://codeberg.org/zzzsy) already
 + BUAAer
 + 汉语 / English / Français
 + coding lover, typing Python & C & JavaScript
-+ learning TypeScript & DS & Rust
++ learning DS & Rust & Julia
 + love maths though poor
 + -q=TXT contact.zzzsy.top
 
-
-[![My GitHub stats](https://github-readme-stats.vercel.app/api?username=zzzsyyy&show_icons=true)](https://github.com/zzzsyyy)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zzzsyyy&layout=compact&hide=HTML)](https://github.com/zzzsyyy?tab=repositories)
+<a href="https://github.com/zzzsyyy">
+  <img height=160 align="center" src="https://github-readme-stats.vercel.app/api?username=zzzsyyy&show_icons=true&count_private=true&locale=fr" />
+</a>
+<a href="https://github.com/zzzsyyy?tab=repositories">
+  <img height=160 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zzzsyyy&count_private=true&layout=compact&hide=HTML,Javascript&card_width=360&locale=fr" />
+</a>
